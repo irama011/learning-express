@@ -41,6 +41,11 @@ app.get('/about',(req,res)=>{
         currentPage:'About'
     });
 });
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        currentPage:"Portfolio"
+    });
+})
 app.get('/bad',(req,res)=>{
     res.send([{
         errormsg:'Unable to load servers'
